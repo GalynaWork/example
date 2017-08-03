@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565656
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
+}
+.items{max-width: 1200px;margin: 0 auto}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-bell:before {
+    content: "\f0f3";
+    font-family: "FontAwesome";
+    cursor: pointer;
+    color:#7e838b;
+    font-size: 20px;
+}
+.fa-plus-circle:before {
+    content: "\f055";
+    font-family: "FontAwesome";
+    cursor: pointer;
+    color:#c6c8cc;
+    font-size: 14px;
+}
+.fa-plus:before {
+    content: "\f067";
+    font-family: "FontAwesome";
+    cursor: pointer;
+    font-size: 44px;
+}
+.bell span{display: block}
+.bell .hover .fa-bell:before{color:#dddf47}
+.bell .active .fa-bell:before{color:#e6d40e}
+.bell,.btn-design,.text,.add-folder,.btn-upgrade,.text-learn{background: #3f4652}
+.bell div,.btn-design div,.text div,.add-folder div,.btn-upgrade div,.text-learn div,.post-list div,.add div{padding-top: 10px;padding-left: 20px}
+.bell .example .fa-bell:before{ transition: 450ms ease 0s}
+.bell .example:hover .fa-bell:before{color:#dddf47}
+.bell .example:active .fa-bell:before{color:#e6d40e}
+.bell span{color:#fff;}
+.create-design,.upgrade-design{
+    display: block;
+    background:#99c432 ;
+    width: 210px;
+    height: 43px;
+    outline: none;
+    color:#fff;
+    border: 1px solid #99c432 ;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 450ms ease 0s
+
+}
+.upgrade-design{background:#4e5660;border: 1px solid #4e5660;}
+.btn-design span,.text,.btn-upgrade span{color:#fff;}
+.btn-design .normal .create-design{ background: #99c432;}
+.btn-design .hover .create-design{ background: #aada37;}
+.btn-design .active .create-design{ background: #8db42f;}
+.btn-design .example{ transition: 450ms ease 0s}
+.btn-design .example:hover .create-design{
+    background: #aada37;
+}
+.btn-design .example:active .create-design{
+    background: #8db42f;
+}
+.text .hover p{color:#aada37}
+.text .active p{background-color:#363d47;    margin-left: -20px;
+    padding-left: 20px;}
+.text p{cursor: pointer}
+.text .example p{ transition: 450ms ease 0s}
+.text .example p:hover{
+    color:#aada37
+}
+.text .example p:active{
+    background-color:#363d47;    margin-left: -20px;
+    padding-left: 20px;color:#fff;
+
+}
+.add-folder div,.upgrade-design,.text-learn,.post-list div{cursor: pointer}
+.add-folder p{color:#c6c8cc;display: inline-block;margin-left: 10px}
+.add-folder span,.text-learn span{display: block;color:#fff}
+.add-folder .hover p,.add-folder .hover .fa-plus-circle:before{color:#aada37}
+.add-folder .active p,.add-folder .active .fa-plus-circle:before{color:#8db42f}
+.add-folder .example p{ transition: 450ms ease 0s}
+.add-folder .example:hover p{color:#aada37}
+.add-folder .example .fa-plus-circle:before{ transition: 450ms ease 0s}
+.add-folder .example:hover .fa-plus-circle:before{color:#aada37}
+.add-folder .example:active p{color:#8db42f}
+.add-folder .example:active .fa-plus-circle:before{color:#8db42f}
+
+.btn-upgrade .normal .upgrade-design{ background: #4e5660;}
+.btn-upgrade .hover .upgrade-design{ background: #04dae3;}
+.btn-upgrade .active .upgrade-design{ background: #04b6bd;}
+.btn-upgrade .example .upgrade-design{ transition: 450ms ease 0s}
+.btn-upgrade .example:hover .upgrade-design{
+    background: #04dae3;
+}
+.btn-upgrade .example:active .upgrade-design{
+    background: #04b6bd;
+}
+.text-learn p{color:#4e5660}
+.text-learn .normal p{ color: #4e5660;}
+.text-learn .hover p{ color: #04dae3;}
+.text-learn .active p{ color: #04b6bd;}
+.text-learn .example p{ transition: 450ms ease 0s}
+.text-learn .example p:hover{
+    color: #04dae3;
+}
+.text-learn .example p:active {
+    color: #04b6bd;
+}
+.post-list,.add{background: #1da3bd;color:#fff;}
+.post-list div{width: 118px}
+.post-list p,.add p{text-align: center}
+.post-list .hover img{transform: scale(1.1)}
+.post-list .example img{ transition: 450ms ease 0s}
+.post-list .example:hover img{transform: scale(1.1)}
+
+.add .add-border{border: 2px dashed #fff;width: 88px;height: 92px;padding: 0;text-align: center;
+    vertical-align: middle;
+    line-height: 110px;}
+.add div {width: 88px;cursor: pointer}
+
+.add{background: #4c6ca5}
+.add .hover .add-border{border-color:#04dae3;transform: scale(1.1)}
+.add .hover p,.add .hover .fa-plus:before{color:#04dae3}
+.add .active .add-border{border-color: #04b6bd;transform: scale(1.1)}
+.add .active p,.add .active .fa-plus:before{color: #04b6bd}
+.add .example p,.add .example .fa-plus:before,.add .example .add-border{transition: 450ms ease 0s}
+.add .example:hover p{
+    color:#04dae3;
+}
+.add .example:hover .fa-plus:before{color: #04dae3;transform: scale(1.1)}
+.add .example:hover .add-border{border-color: #04dae3;transform: scale(1.1)}
+.add .example:active p{
+    color:#04b6bd;
+}
+.add .example:active .add-border{border-color: #04b6bd;transform: scale(1.1)}
+.add .example:active .fa-plus:before{color: #04b6bd;transform: scale(1.1)}
+.items{
+    display:flex ;
+    flex-flow: row wrap;
+}
+.items > div{
+    width: 25%;
+    padding-bottom: 20px;
+}
+@media (max-width: 1000px){
+    .items > div{
+        width: 33.33%;
+        padding-bottom: 20px;
+    }
+    .items .post-list,.items .add{width: 50%}
+}
+@media (max-width: 767px){
+    .items > div{
+        width: 50%;
+
+    }
+    .items .post-list,.items .add{width: 50%}
+}
+@media (max-width: 480px){
+    .items > div{
+        width: 100%;
+        display: flex;flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .text .active p{padding-left: 0px;margin-left:0px}
+    .items > div > div{padding-left: 0;width: 100%}
+    .items > div button{margin: 0 auto}
+    .post-list div,.add div{margin: 0 auto;padding-left: 0}
+    .items .post-list,.items .add{width: 100%}
+}
