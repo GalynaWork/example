@@ -78,6 +78,7 @@ body {
     font-size: 44px;
 }
 .bell span{display: block}
+.bell .example i{    cursor: pointer;}
 .bell .hover .fa-bell:before{color:#dddf47}
 .bell .active .fa-bell:before{color:#e6d40e}
 .bell,.btn-design,.text,.add-folder,.btn-upgrade,.text-learn{background: #3f4652}
